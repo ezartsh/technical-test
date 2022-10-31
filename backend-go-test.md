@@ -44,7 +44,7 @@ Buat API Todo List dengan kriteria sebagai berikut :
 <br>
 
 
-Catatan :\
+**Catatan** :\
 Gunakan `SOLID` Principle\
 Reference :
 - https://dave.cheney.net/2016/08/20/solid-go-design
