@@ -1,16 +1,20 @@
+# Go Backend Test.
+
 Anda akan membuat backend handler untuk aplikasi **Todo List**.
-Aplikasi **Todo List** adalah sejenis aplikasi yang umumnya digunakan untuk memelihara tugas sehari-hari kita atau membuat daftar semua yang harus kita lakukan, dengan urutan prioritas tugas tertinggi hingga terendah. Sangat membantu dalam merencanakan jadwal harian kita.
 
-Spesifikasi Bisnis:
+**Todo List App**
+: Sejenis aplikasi yang umumnya digunakan untuk memelihara tugas sehari-hari kita atau membuat daftar semua yang harus kita lakukan, dengan urutan prioritas tugas tertinggi hingga terendah. Sangat membantu dalam merencanakan jadwal harian kita.
 
-	1. Bisa menampilkan list data, menambahkan, mengubah dan menghapus data.
-	2. Bisa membuat sub list untuk setiap list yang terdaftar. Sub list bisa ditambah, diubah dan dihapus. ( hanya 2 level )
+### Spesifikasi Bisnis:
+```
+- Bisa menampilkan list data, menambahkan, mengubah dan menghapus data.
+- Bisa membuat sub list untuk setiap list yang terdaftar. Sub list bisa ditambah, diubah dan dihapus. ( hanya 2 level )
 
-	Data Input untuk masing” list/sub list :
-	1. Title [required | maximum 100 karakter | hanya menerima huruf alphabet, spasi dan angka]
-	2. Deskripsi [required | maximum 1000 karakter]
-	3. File Upload [required | hanya menerima file dengan extension .txt dan .pdf]
-
+Data Input untuk masing” list/sub list :
+- Title [required | maximum 100 karakter | hanya menerima huruf alphabet, spasi dan angka]
+- Deskripsi [required | maximum 1000 karakter]
+- File Upload [required | hanya menerima file dengan extension .txt dan .pdf]
+```
 
 Buat API Todo List dengan kriteria sebagai berikut :
 
@@ -22,20 +26,35 @@ Buat API Todo List dengan kriteria sebagai berikut :
 6. Mengubah data list/sub list dengan kritera input diatas.
 7. Menghapus data list/sub list.
 
-Jumlah API yang dibutuhkan untuk mengakomodir fitur ini tidak dibatasi, silahkan buat sesuai yang menurut anda paling efisien.
+<br>
 
-Teknologi dan library yang wajib digunakan:
-1. Menggunakan bahasa pemrograman Golang
-2. Menggunakan Framework Echo.
-3. Menggunakan library GORM v2 sebagai tools komunikasi dan modifikasi data.
-4. Menggunakan PostgreSQL untuk penyimpanan data.
+>Jumlah API yang dibutuhkan untuk mengakomodir fitur ini tidak dibatasi, silahkan buat sesuai yang menurut anda paling efisien.
+
+<br>
+
+### Teknologi dan library yang wajib digunakan:
+
+| Teknologi   | Version | Link |
+| ----------- | ---------------- | ------------------- |
+| Golang      | v1.18 or later   | [Go Download](https://go.dev/dl)  |
+| Go Echo Framework     | v4     | [Echo Installation](https://echo.labstack.com/guide/#installation) | 
+| GORM | v2 | [GORM Installation](https://gorm.io/docs/#Install) |
+| PostgreSQL | v13 or later | [PostgreSQL Download](https://www.postgresql.org/download/) |
+
+<br>
 
 
-Catatan :
-Gunakan SOLID Principle ( Reference : https://dave.cheney.net/2016/08/20/solid-go-design, https://s8sg.medium.com/solid-principle-in-go-e1a624290346 ).
+Catatan :\
+Gunakan `SOLID` Principle\
+Reference :
+- https://dave.cheney.net/2016/08/20/solid-go-design
+- https://s8sg.medium.com/solid-principle-in-go-e1a624290346
+
 Anggaplah aplikasi ini berskala besar dan memiliki potensi untuk terjadinya perubahan atau penambahan fitur scara berkala.
 Maka tentunya aplikasi ini akan menjadi lebih complex dan akan dikerjakan lebih dari 1 developer (kolaborasi team).
 **Jadi code quality di aplikasi ini harus reusable, readable dan easy to upgrade.**
+
+<br>
 
 Sangat baik jika ada :
 1. Migration Database ( database version control ), fitur yang berfungsi untuk creating schema table ke db, rollback schema, adding column dan change column via CLI. Reference ( https://en.wikipedia.org/wiki/Schema_migration )
